@@ -1,0 +1,15 @@
+
+<div class="container">
+<div class="row">
+    <div class="col-xs-12">
+        <h3>I'm in the app with server</h3>
+    </div>
+    <p *ngIf="isServerCreated; else noServer">the server was created!!</p>
+
+    <ng-template #noServer>
+        <p>There is no server!!</p>
+    </ng-template>
+
+    <button (click)="onCreateServer()" class="btn-primary">Clik Here to Create the server</button>
+</div>
+</div>
