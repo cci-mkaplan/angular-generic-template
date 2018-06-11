@@ -5,13 +5,24 @@ import {HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
-
+import {HeaderComponent} from './header/header.component';
+import {RecipesComponent} from './recipes/recipes.component';
+import {RecipesListComponent} from './recipes/recipes-list/recipes-list.component';
+import { RecipesItemComponent } from './recipes/recipes-list/recipes-item/recipes-item.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    RecipesComponent,
+    RecipesListComponent,
+    HeaderComponent,
+    RecipesItemComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,
