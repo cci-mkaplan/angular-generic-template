@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../recipes.model';
+
 
 @Component({
   selector: 'app-recipes-list',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipesListComponent implements OnInit {
 
-  constructor() { }
+  recipes: Recipe[]=[
+    new Recipe('a test recipe','test also','https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_1280.jpg'),
 
+  ];
+
+  constructor() { };
   ngOnInit() {
   }
-
+  
 }
